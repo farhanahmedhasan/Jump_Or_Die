@@ -26,19 +26,19 @@ class JumpMan {
         }, 500)
         
     }
-
-    mIdead() {
-        const charBottom = parseInt(window.getComputedStyle(this.character).getPropertyValue('bottom'))
-        console.log('charBottom: '+charBottom)
-        const blockLeft = parseInt(window.getComputedStyle(this.block).getPropertyValue('left'))
-        console.log('blockLeft:' + blockLeft)
+    //buggy|| I tried to check If that 2 thing hit eachother it should stop the game But i failed :(
+    // mIdead() {
+    //     const charTop = parseInt(window.getComputedStyle(this.character).getPropertyValue('top'))
+    //     console.log('charTop: '+charTop)
+    //     const blockLeft = parseInt(window.getComputedStyle(this.block).getPropertyValue('left'))
+    //     console.log('blockLeft:' + blockLeft)
         
-        if (blockLeft < 50 && blockLeft > 0) {
-            this.block.style.animation = 'none'
-            this.block.style.display = 'none'
-            alert("Phew!! Try Again You nOOb")
-        }
-    }
+    //     if (blockLeft < 50 && blockLeft > 0 && charTop>=70) {
+    //         this.block.style.animation = 'none'
+    //         this.block.style.display = 'none'
+    //         alert("Phew!! Try Again You nOOb")
+    //     }
+    // }
 
 }
 new JumpMan()
